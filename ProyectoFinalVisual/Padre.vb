@@ -1,9 +1,14 @@
-﻿Public Class Padre
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Padre
     Public f1 As New Menu
     Public f3 As New Primeros
     Public f4 As New Segundos
     Public f5 As New Postres
     Dim f2 As New Reserva
+    Dim cnn As MySqlConnection
+    Dim sql As String
+    Dim cadenaconexion As String = "server=127.0.0.1;database=restaurante;user id=root2;password=root2;port=3306"
 
     Private Sub F2Form2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
         Me.Label1.Visible = False
@@ -31,6 +36,15 @@
     End Sub
 
     Private Sub Padre_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim coon As New MySqlConnection(cadenaconexion)
+        Try
+            coon.Open()
+
+        Catch ex As Exception
+            MsgBox("Fallo en la conexión")
+        End Try
+        coon.Close()
+
         Me.IsMdiContainer = True
         Me.KeyPreview = True
 

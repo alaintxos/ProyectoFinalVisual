@@ -1,10 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Primeros
-    Dim cnn As MySqlConnection
     Dim sql As String
     Dim das1 As DataSet
     Dim resultado As Integer
     Dim adap1 As MySqlDataAdapter
+    Dim cnn As MySqlConnection
     Dim cadenaconexion As String = "server=127.0.0.1;database=restaurante;user id=root2;password=root2;port=3306"
 
     Private Sub Primeros_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -32,7 +32,5 @@ Public Class Primeros
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
 End Class

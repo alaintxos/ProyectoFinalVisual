@@ -96,6 +96,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="mWhatsApp.vb" />
     <Compile Include="Padre.vb">
       <SubType>Form</SubType>
     </Compile>

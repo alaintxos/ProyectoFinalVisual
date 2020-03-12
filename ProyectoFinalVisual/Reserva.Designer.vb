@@ -37,6 +37,8 @@ Partial Class Reserva
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -194,6 +196,24 @@ Partial Class Reserva
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Reserva"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label8.Location = New System.Drawing.Point(39, 327)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(74, 25)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "E-Mail:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(224, 331)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox4.TabIndex = 17
+        '
         'Reserva
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -201,6 +221,8 @@ Partial Class Reserva
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.ProyectoFinalVisual.My.Resources.Resources.restaurante_Vertical_Valencia_La_Sucursal_01
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label6)
@@ -240,4 +262,6 @@ Partial Class Reserva
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TextBox4 As TextBox
 End Class

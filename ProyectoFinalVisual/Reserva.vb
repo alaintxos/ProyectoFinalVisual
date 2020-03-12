@@ -49,9 +49,9 @@ Public Class Reserva
 
                 With message
                     .From = New System.Net.Mail.MailAddress("alaintxos7@gmail.com")
-                    .To.Add("alain.mansodi@gmail.com")
-                    .Body = "Encantados de tenerte como cliente"
-                    .Subject = "reservarealizada"
+                    .To.Add(TextBox4.Text)
+                    .Body = "Bienvenido" & Me.TextBox1.Text & ", su reserva es el día: " & Me.TextBox3.Text & " a la hora: " & hora & " Encantados de tenerte como cliente."
+                    .Subject = "reserva realizada Food on time"
                     .Priority = System.Net.Mail.MailPriority.Normal
 
                 End With
