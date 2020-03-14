@@ -75,6 +75,14 @@ Public Class Reserva
                     cnn.Close()
                 End If
             End Try
+            Me.TextBox1.Text = ""
+            Me.TextBox2.Text = ""
+            Me.TextBox3.Text = ""
+            Me.ComboBox1.Text = ""
+            Me.ComboBox2.Text = ""
+            Me.NumericUpDown1.ResetText()
+            Me.TextBox4.Text = ""
+
         End If
 
     End Sub
@@ -104,4 +112,5 @@ Public Class Reserva
     Private Sub ComboBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ComboBox2.KeyPress
         e.Handled = True
     End Sub
+
 End Class

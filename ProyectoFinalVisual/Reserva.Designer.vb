@@ -188,11 +188,11 @@ Partial Class Reserva
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Gabriola", 50.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label7.Location = New System.Drawing.Point(232, 44)
+        Me.Label7.Location = New System.Drawing.Point(298, 30)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(282, 76)
+        Me.Label7.Size = New System.Drawing.Size(208, 124)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Reserva"
         '
